@@ -133,7 +133,7 @@ export default function Portfolio() {
           <h2 className="text-4xl font-bold text-center mb-12">
             Featured <span className="bg-gradient-to-r from-indigo-500 to-sky-500 bg-clip-text text-transparent">Projects</span>
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {[
               {
                 icon: <FaCalendarAlt />,
@@ -287,7 +287,7 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-4 gap-6">
             {[
               { icon: <FaEnvelope />, label: 'Email', href: 'mailto:t.takushi04@gmail.com' },
-              { icon: <FaLinkedin />, label: 'LinkedIn', href: 'https://www.linkedin.com/in/travis-takushi' },
+              { icon: <FaLinkedin />, label: 'LinkedIn', href: 'https://https://www.linkedin.com/in/travis-takushi-4b7340339/' },
               { icon: <FaGithub />, label: 'GitHub', href: 'https://github.com/takoosh808' },
               { icon: <FaPhone />, label: 'Phone', href: 'tel:8082271391' }
             ].map((contact) => (
