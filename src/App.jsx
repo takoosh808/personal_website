@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { FaCalendarAlt, FaSeedling, FaTrophy, FaEnvelope, FaLinkedin, FaGithub, FaPhone } from 'react-icons/fa';
 
 export default function Portfolio() {
   const [scrolled, setScrolled] = useState(false);
@@ -135,16 +136,25 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                icon: '📅',
+                icon: <FaCalendarAlt />,
                 title: 'Class Scheduler',
                 description: 'A comprehensive full-stack web application that simulates a college system, allowing users to input and create class schedules with an intuitive interface for choosing classes.',
-                tech: ['Django', 'React', 'PostgreSQL', 'REST API']
+                tech: ['Django', 'React', 'PostgreSQL', 'REST API'],
+                link: 'https://github.com/takoosh808/Class_Scheduler'
               },
               {
-                icon: '🏆',
+                icon: <FaSeedling />,
+                title: 'Computer Vision for Plant Waste',
+                description: 'Built a custom PyTorch model to identify and quantify plant waste coverage on farmland, helping farmers assess soil quality and retention for future crop cycles.',
+                tech: ['PyTorch', 'Python', 'Computer Vision', 'Machine Learning'],
+                link: 'https://github.com/takoosh808'
+              },
+              {
+                icon: <FaTrophy />,
                 title: 'AgAthon Project - Biomass Detection',
                 description: "Collaborated with a team of 4 at AgAid WSU's hackathon to develop a computer vision model that distinguishes between helpful biomasses and unusable soil, contributing to sustainable agriculture.",
-                tech: ['PyTorch', 'Python', 'Team Collaboration', 'Hackathon']
+                tech: ['PyTorch', 'Python', 'Team Collaboration', 'Hackathon'],
+                link: 'https://github.com/takoosh808/AgAthon'
               }
             ].map((project) => (
               <div key={project.title} className="bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-2 transition-all hover:shadow-indigo-200">
@@ -163,7 +173,7 @@ export default function Portfolio() {
                       </span>
                     ))}
                   </div>
-                  <a href="https://github.com/takoosh808" className="text-indigo-500 font-semibold hover:text-indigo-600">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-indigo-500 font-semibold hover:text-indigo-600">
                     View Code →
                   </a>
                 </div>
@@ -283,10 +293,10 @@ export default function Portfolio() {
           </p>
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              { icon: '✉️', label: 'Email', href: 'mailto:t.takushi04@gmail.com' },
-              { icon: '💼', label: 'LinkedIn', href: 'https://www.linkedin.com/in/travis-takushi' },
-              { icon: '💻', label: 'GitHub', href: 'https://github.com/takoosh808' },
-              { icon: '📱', label: 'Phone', href: 'tel:8082271391' }
+              { icon: <FaEnvelope />, label: 'Email', href: 'mailto:t.takushi04@gmail.com' },
+              { icon: <FaLinkedin />, label: 'LinkedIn', href: 'https://www.linkedin.com/in/travis-takushi' },
+              { icon: <FaGithub />, label: 'GitHub', href: 'https://github.com/takoosh808' },
+              { icon: <FaPhone />, label: 'Phone', href: 'tel:8082271391' }
             ].map((contact) => (
               <a
                 key={contact.label}
