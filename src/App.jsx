@@ -287,7 +287,7 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-4 gap-6">
             {[
               { icon: <FaEnvelope />, label: 'Email', href: 'mailto:t.takushi04@gmail.com' },
-              { icon: <FaLinkedin />, label: 'LinkedIn', href: 'https://https://www.linkedin.com/in/travis-takushi-4b7340339/' },
+              { icon: <FaLinkedin />, label: 'LinkedIn', href: 'https://www.linkedin.com/in/travis-takushi-4b7340339/' },
               { icon: <FaGithub />, label: 'GitHub', href: 'https://github.com/takoosh808' },
               { icon: <FaPhone />, label: 'Phone', href: 'tel:8082271391' }
             ].map((contact) => (
