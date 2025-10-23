@@ -143,13 +143,6 @@ export default function Portfolio() {
                 link: 'https://github.com/takoosh808/Class_Scheduler'
               },
               {
-                icon: <FaSeedling />,
-                title: 'Computer Vision for Plant Waste',
-                description: 'Built a custom PyTorch model to identify and quantify plant waste coverage on farmland, helping farmers assess soil quality and retention for future crop cycles.',
-                tech: ['PyTorch', 'Python', 'Computer Vision', 'Machine Learning'],
-                link: 'https://github.com/takoosh808'
-              },
-              {
                 icon: <FaTrophy />,
                 title: 'AgAthon Project - Biomass Detection',
                 description: "Collaborated with a team of 4 at AgAid WSU's hackathon to develop a computer vision model that distinguishes between helpful biomasses and unusable soil, contributing to sustainable agriculture.",
